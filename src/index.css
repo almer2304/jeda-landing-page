@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-page: #FAF7F2;
+    --bg-card: #FFFFFF;
+    --text-primary: #232622;
+    --text-muted: #5A5F56;
+    --brand-sage: #87A878;
+    --brand-sage-dark: #4A6B3D;
+    --brand-terracotta: #D9822B;
+  }
+
+  body {
+    background-color: #FAF7F2;
+    color: #232622;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, .font-serif-editorial {
+    font-family: 'Newsreader', Georgia, serif;
+  }
+
+  code, pre, .font-code {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom subtle paper warmth and utilities */
+.paper-grain {
+  background-color: #FAF7F2;
+  background-image: radial-gradient(rgba(74, 107, 61, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(0.92);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+}
+
+.animate-breathe {
+  animation: breathe 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Smooth custom range slider */
+input[type="range"] {
+  accent-color: #4A6B3D;
+}
