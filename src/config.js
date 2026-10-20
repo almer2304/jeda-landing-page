@@ -4,7 +4,7 @@ export const JEDA_CONFIG = {
   tagline: "Rebut Kembali Waktumu dari Siklus Doomscrolling",
   version: "v1.0.0",
   releaseDate: "Oktober 2026",
-  apkSize: "54.8 MB",
+  apkSize: "20.6 MB",
   minAndroid: "Android 8.0 (Oreo) atau lebih baru",
   
   // URL Download APK:
