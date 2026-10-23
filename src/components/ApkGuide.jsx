@@ -12,10 +12,10 @@ const steps = [
   },
   {
     number: '02',
-    title: 'Izinkan Instalasi Sumber Dikenal',
-    desc: 'Buka file yang baru saja diunduh. Jika muncul peringatan keamanan sistem, klik Setelan (Settings) lalu aktifkan sakelar "Izinkan dari sumber ini".',
+    title: 'Izinkan Instalasi & Play Protect',
+    desc: 'Buka file yang baru saja diunduh. Jika muncul konfirmasi keamanan atau Google Play Protect, pilih "Tetap Pasang" (Install Anyway) atau izinkan dari sumber ini.',
     icon: ShieldCheck,
-    hint: 'Android melindungi Anda dengan meminta konfirmasi sebelum memasang aplikasi pihak ketiga pertama kali.'
+    hint: 'Google Play Protect memindai otomatis file di luar Play Store. Karena Jeda membutuhkan izin Accessibility lokal untuk mendeteksi aplikasi candu, Android memunculkan konfirmasi keamanan ekstra.'
   },
   {
     number: '03',
