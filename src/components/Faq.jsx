@@ -1,7 +1,15 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { ChevronDown, HelpCircle } from 'lucide-react';
 
 const faqs = [
+  {
+    q: 'Mengapa izin Aksesibilitas Jeda berwarna abu-abu / tidak bisa diklik di Android 13/14 (Samsung, Xiaomi, dll)?',
+    a: 'Pada Android 13 dan 14 (khususnya Samsung One UI 6, Xiaomi HyperOS/MIUI, Oppo ColorOS), sistem menyalakan proteksi \"Setelan yang Dibatasi\" (Restricted Settings) untuk file APK yang diunduh di luar Play Store. Cara mengaktifkannya sangat mudah dalam 3 langkah:\n1. Buka Pengaturan HP > Aplikasi > cari dan ketuk \"Jeda\" (atau tahan ikon Jeda di layar depan lalu ketuk ikon info \"i\").\n2. Di pojok kanan atas, ketuk ikon Titik Tiga (⋮).\n3. Pilih \"Izinkan setelan terbatas\" (Allow restricted settings), lalu konfirmasi dengan PIN/sidik jari Anda. Setelah itu, buka kembali Jeda dan izin Aksesibilitas sudah bisa dinyalakan secara normal!'
+  },
+  {
+    q: 'Bagaimana langkah terperinci mengunci aplikasi di Jeda untuk pengguna baru?',
+    a: 'Setelah semua 5 izin onboarding aktif, mengunci aplikasi sangat mudah:\n1. Di Beranda Jeda, ketuk tombol \"+ Tambah Kunci\" atau \"Tambah Kuota\".\n2. Pilih aplikasi candu yang ingin Anda batasi (misal: Instagram, TikTok, YouTube, atau game).\n3. Tentukan mode yang Anda inginkan:\n   • Kunci Langsung (1–24 Jam): Untuk detoks instan dan fokus belajar/bekerja.\n   • Kunci Terjadwal: Mengunci otomatis pada jam kerja atau jam tidur malam secara berulang.\n   • Batas Kuota Harian: Menetapkan batas menit per hari (misal 30 menit). Begitu kuota habis, aplikasi akan langsung terkunci rapat.'
+  },
   {
     q: 'Apakah data pribadi, isi layar, atau chat saya dibaca oleh Jeda?',
     a: 'Sama sekali tidak. Jeda hanya membaca satu hal melalui Accessibility Service: nama paket aplikasi yang sedang berada di layar depan (foreground package name, contoh: com.instagram.android). Jeda tidak pernah membaca isi teks, password, pesan chat, maupun foto Anda. Seluruh pemrosesan berjalan 100% lokal di perangkat Anda (on-device) tanpa mengirimkan data apa pun ke server.'
