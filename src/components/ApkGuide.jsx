@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Download, ShieldCheck, Settings, CheckCircle2, AlertTriangle, ArrowRight } from 'lucide-react';
 import { APP_CONFIG } from '../config';
 
@@ -19,21 +19,29 @@ const steps = [
   },
   {
     number: '03',
-    title: 'Konfigurasi 3 Izin Utama Jeda',
-    desc: 'Saat pertama membuka Jeda, Anda akan dipandu mengaktifkan 3 izin krusial agar penguncian bekerja sempurna tanpa bocor:',
+    title: 'Aktivasi 5 Izin Proteksi Jeda',
+    desc: 'Saat pertama membuka Jeda, Anda akan dipandu mengaktifkan 5 izin agar penguncian bekerja sempurna tanpa bocor. Di setiap layar pengaturan Android, cari nama \"Jeda\":',
     icon: Settings,
     permissions: [
       {
-        name: 'Aksesibilitas (Accessibility Service)',
-        purpose: 'Mendeteksi saat aplikasi terlarang dibuka di layar depan secara real-time.'
+        name: '1. Akses Penggunaan (Usage Stats)',
+        purpose: 'Cari \"Jeda\" di daftar aplikasi > aktifkan sakelar agar Jeda tahu kapan aplikasi candu dibuka.'
       },
       {
-        name: 'Tampilkan di Atas Aplikasi Lain (Overlay)',
-        purpose: 'Menampilkan layar jeda bernapas sebelum jari Anda sempat terseret doomscroll.'
+        name: '2. Tampil di Atas App Lain (Overlay)',
+        purpose: 'Cari \"Jeda\" di daftar aplikasi > nyalakan sakelar agar layar jeda bernapas muncul seketika.'
       },
       {
-        name: 'Bodyguard (Admin Perangkat)',
-        purpose: 'Mencegah refleks emosional menghapus Jeda secara tiba-tiba saat sedang ngidam layar.'
+        name: '3. Pengecualian Baterai',
+        purpose: 'Pilih \"Izinkan\" (Tidak Dibatasi) agar proteksi fokus tidak mati sendiri di latar belakang.'
+      },
+      {
+        name: '4. Bodyguard (Admin Perangkat)',
+        purpose: 'Ketuk \"Aktifkan aplikasi admin perangkat ini\" untuk mencegah pencopotan impulsif.'
+      },
+      {
+        name: '5. Aksesibilitas (Accessibility Service)',
+        purpose: 'Masuk \"Aplikasi terinstal\" > ketuk \"Jeda\" > geser AKTIF. (Khusus Android 13/14 Samsung/Xiaomi: jika abu-abu, buka Info Aplikasi Jeda > Titik Tiga ⋮ > Izinkan setelan terbatas).'
       }
     ]
   }
